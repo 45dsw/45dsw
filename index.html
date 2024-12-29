@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>随机跳转页面</title>
+    <script>
+        // 定义一个包含多个链接的数组
+        const links = [
+            "https://www.example1.com",
+            "https://www.example2.com",
+            "https://www.example3.com",
+            // 在这里添加更多你想要的链接
+        ];
+
+        // 生成一个随机索引
+        function getRandomIndex() {
+            return Math.floor(Math.random() * links.length);
+        }
+
+        window.onload = function () {
+            // 获取随机索引
+            const randomIndex = getRandomIndex();
+            // 获取对应的随机链接
+            const randomLink = links[randomIndex];
+            // 进行页面跳转
+            window.location.href = randomLink;
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
